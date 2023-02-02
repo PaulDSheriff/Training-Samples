@@ -5,14 +5,14 @@ namespace AdvWorks.DataLayer.RepositoryClasses;
 /// <summary>
 /// This class creates some fake data for the Address table.
 /// </summary>
-public partial class AddressRepository
+public class AddressRepository
 {
-  #region GetAll Method
+  #region Get Method
   /// <summary>
   /// Get all Address objects
   /// </summary>
   /// <returns>A list of Address objects</returns>
-  public static List<Address> GetAll()
+  public List<Address> Get()
   {
     return new List<Address>
     {
@@ -2528,7 +2528,7 @@ public partial class AddressRepository
   /// <returns>A valid Address object object, or null if not found</returns>
   public Address? Get(int id)
   {
-    return GetAll().Where(row => row.AddressID == id).FirstOrDefault();
+    return Get().Where(row => row.AddressID == id).FirstOrDefault();
   }
   #endregion
 }
