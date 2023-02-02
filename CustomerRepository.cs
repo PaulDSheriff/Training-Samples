@@ -1,6 +1,6 @@
-using AdvWorksAPI.EntityLayer;
+using AdvWorks.EntityLayer.EntityClasses;
 
-namespace AdvWorksAPI.RepositoryLayer;
+namespace AdvWorks.DataLayer.RepositoryClasses;
 
 /// <summary>
 /// This class creates some fake data for the Customer table.
@@ -708,7 +708,6 @@ public class CustomerRepository
          EmailAddress = "eugene2adventure-works.com",
          Phone = "136-555-0134",
          ModifiedDate = Convert.ToDateTime("10/13/2004 11:15:07 AM")
-      }
       }
     };
   }
